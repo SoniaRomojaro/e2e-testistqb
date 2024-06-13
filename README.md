@@ -1,11 +1,10 @@
-# cypress-bootampqa
+# Cypress-Istqb_Online_test
 
-<img src="https://bootcampqa.com/images/logo-black.png" alt="Bootcamp QA Logo">
 
-> Javascript, Cypress with Cucumber example project.
+> Javascript, Cypress with Cucumber project.
 
 ### 💻 Description
-E2e tests for https://bootcampqa.com
+E2e tests for 
 
 JIRA PROJECT (ACCESS REQUIRED): https://mybootcampqa.atlassian.net/jira/software/projects/BOOTCAMPQA/boards/1 
 - ## 💻 Pre-requisites
@@ -31,5 +30,5 @@ Execute node comand in a terminal: npm i
 
 
 ##  Run tests on CI with github Actions:
-1. Run tests on CI: https://github.com/Bootcamp-QA/cypress-bootcampqa/actions/workflows/main.yml
-2. See test results on Cypress Cloud: https://cloud.cypress.io/projects/438j27/runs
+1. Run tests on CI: https://github.com/SoniaRomojaro/e2e-testistqb/actions/workflows/main.yml
+2. See test results on Cypress Cloud: https://cloud.cypress.io/projects/f4p17w/runs
