@@ -23,7 +23,7 @@ module.exports = defineConfig({
     setupNodeEvents,
     specPattern: "cypress/e2e/features/*.feature",
     projectId: "f4p17w",
-    baseUrl: "https://www.bootcampqa.com/",
+    baseUrl: "https://soniaromojaro.github.io/itqtb-online-test/",
     chromeWebSecurity: true
   },
 });
