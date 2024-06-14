@@ -1,12 +1,12 @@
-# Cypress-Istqb_Online_test
+# Cypress-Istqb_Online_Test
 
 
 > Javascript, Cypress with Cucumber project.
 
 ### 💻 Description
-E2e tests for 
+E2e tests for https://soniaromojaro.github.io/itqtb-online-test/
 
-JIRA PROJECT (ACCESS REQUIRED): https://mybootcampqa.atlassian.net/jira/software/projects/BOOTCAMPQA/boards/1 
+JIRA PROJECT (ACCESS REQUIRED): https://qasonia.atlassian.net/
 - ## 💻 Pre-requisites
 
 1. Download and Install Node JS: https://nodejs.org/en/download
@@ -32,3 +32,7 @@ Execute node comand in a terminal: npm i
 ##  Run tests on CI with github Actions:
 1. Run tests on CI: https://github.com/SoniaRomojaro/e2e-testistqb/actions/workflows/main.yml
 2. See test results on Cypress Cloud: https://cloud.cypress.io/projects/f4p17w/runs
+
+
+## Autora
+Sonia
