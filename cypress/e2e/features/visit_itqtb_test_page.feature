@@ -4,3 +4,5 @@ Feature: Visit Istqb Test Page
 
 Scenario: Visit istqb test page 
     Given the student visit istqb test page
+    When the student click on welcome menu
+    Then the url shold include welcome
