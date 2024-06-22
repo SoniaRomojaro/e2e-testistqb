@@ -6,7 +6,7 @@ import {
 
 
 
-Given("the student visit istqb test page", () => {
+Given("the student is on the ISTQB exam page", () => {
     cy.visit("/");
 });
 
