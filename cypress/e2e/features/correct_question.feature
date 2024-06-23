@@ -1,9 +1,16 @@
 Feature: Correct a question
 
 
-Scenario: Select a valid answer
+Scenario: Select an answer
 Given the student is on the ISTQB exam page
-When the user select answer "B. Pruebas de Regresión" on question "1"
-And the user press Mostrar respuesta button on question "1"
-And the user press Corregir button on question "1"
-Then the user should see the message "Respuesta Correcta. Su puntuación es: 2" on question "1"
+When the user select answer <selectedAnswer> on question <questionNumber>
+And the user press Corregir button on question <questionNumber>
+Then the user should see the message <expectedMessage> on question <questionNumber>
+
+
+Examples:
+ |questionNumber     | selectedAnswer                                        | expectedMessage |
+ |"1"                | "B. Pruebas de Regresión"                             | "Respuesta Correcta. Su puntuación es: 2" |
+ |"1"                | "A. No se recomienda hacer pruebas en esta situación" | "Respuesta Incorrecta. Su puntuación es: -1"|
+ |"1"                | ""                                                    | "No ha cumplimentado la respuesta"|
+
