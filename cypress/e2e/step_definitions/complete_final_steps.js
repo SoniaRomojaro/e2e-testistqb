@@ -19,9 +19,12 @@ import {
 
  }); 
 
- Then("the user should see the final score message {string}", (expectedMessage) => {
+
+Then("the user should see the final score message {string}", (expectedMessage) => {
 
   cy.get('[data-cy="puntuacionfinal"]').should('have.text',expectedMessage);
 
 }); 
+
+
 

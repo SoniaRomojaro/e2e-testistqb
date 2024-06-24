@@ -2,21 +2,16 @@ Feature: Complete Final
 
 Scenario: Complete test and final score
 Given the student is on the ISTQB exam page
-Given the user select one answer <selectedAnswer> on question <questionNumber>
-
-Examples:
- |questionNumber     | selectedAnswer |                                        
- |"1"                | "B. Pruebas de Regresión" |                        
- |"2"                | "C. Todos aquellos que puedan tener algún uso para la herramienta"|  
- |"3"                | "B. no deben basarse en nada"|    
- |"4"                | "B. Nadie"|                              
- |"5"                | "A. Diseño de Prueba"|  
- |"6"                | "No ha cumplimentado la respuesta"|  
- |"7"                | "A. Son las primeras que se hacen"|   
- |"8"                | "B. Prueba de Aceptación de Usuario"|                              
- |"9"                | "B. Son de caja blanca"|  
- |"10"               | "No ha cumplimentado la respuesta"|         
-
+Given the user select one answer "B. Pruebas de Regresión" on question "1"
+Given the user select one answer "C. Todos aquellos que puedan tener algún uso para la herramienta" on question "2"
+Given the user select one answer "B. no deben basarse en nada" on question "3"
+Given the user select one answer "B. Nadie" on question "4"
+Given the user select one answer "A. Diseño de Prueba" on question "5"
+Given the user select one answer "No ha cumplimentado la respuesta" on question "6"
+Given the user select one answer "A. Son las primeras que se hacen" on question "7"
+Given the user select one answer "B. Prueba de Aceptación de Usuario" on question "8"
+Given the user select one answer "B. Son de caja blanca" on question "9"
+Given the user select one answer "No ha cumplimentado la respuesta" on question "10"       
 When the user press Calcular Puntuacion button
 Then the user should see the final score message “Su puntuación es 4”
 
