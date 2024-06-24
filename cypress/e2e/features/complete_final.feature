@@ -1,5 +1,4 @@
-Feature: Final score
-
+Feature: Complete Final
 
 Scenario: Complete test and final score
 Given the student is on the ISTQB exam page
