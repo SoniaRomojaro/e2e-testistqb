@@ -2,8 +2,7 @@ Feature: Complete Final
 
 Scenario: Complete test and final score
 Given the student is on the ISTQB exam page
-When the user select one answer <selectedAnswer> on question <questionNumber>
-
+Given the user select one answer <selectedAnswer> on question <questionNumber>
 
 Examples:
  |questionNumber     | selectedAnswer |                                        
@@ -18,6 +17,6 @@ Examples:
  |"9"                | "B. Son de caja blanca"|  
  |"10"               | "No ha cumplimentado la respuesta"|         
 
-And the user press Calcular Puntuacion button 
-Then the user should see the final score message Su puntuación es 4
+When the user press Calcular Puntuacion button
+Then the user should see the final score message “Su puntuación es 4”
 

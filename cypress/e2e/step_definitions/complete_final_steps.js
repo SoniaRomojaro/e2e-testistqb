@@ -5,11 +5,13 @@ import {
   } from "@badeball/cypress-cucumber-preprocessor";
 
 
-  When("the user select one answer {string} on question {string}", (selectedAnswer,questionnumber) => {
+  Given("the user select one answer {string} on question {string}", (selectedAnswer,questionnumber) => {
 
     cy.get('[data-cy="question'+questionnumber+'"]').select(selectedAnswer);
 
   }); 
+
+  
 
   When("the user press Calcular Puntuacion button" , () => {
 
@@ -22,7 +24,4 @@ import {
   cy.get('[data-cy="puntuacionfinal"]').should('have.text',expectedMessage);
 
 }); 
-
-
-
 
