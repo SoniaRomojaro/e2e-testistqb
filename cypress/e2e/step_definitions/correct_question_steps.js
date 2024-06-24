@@ -11,9 +11,10 @@ import {
 
   }); 
 
-  Then("the user should see the message {string} on question {string}", (expectedMessage,questionnumber) => {
+  Then("the user should see the correct question message {string} on question {string}", (expectedMessage,questionnumber) => {
 
     cy.get('[data-cy="correctapregunta'+questionnumber+'"]').should('have.text',expectedMessage);
 
   }); 
+  
   

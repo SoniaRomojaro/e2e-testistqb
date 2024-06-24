@@ -18,7 +18,7 @@ import {
   }); 
 
   
-  Then("the user should see the message {string} on question {string}", (expectedMessage,questionnumber) => {
+  Then("the user should see the answer question message {string} on question {string}", (expectedMessage,questionnumber) => {
 
     cy.get('[data-cy="mostrarrespuestapre'+questionnumber+'"]').should('have.text',expectedMessage);
 
