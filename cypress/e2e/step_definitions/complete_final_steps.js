@@ -5,7 +5,7 @@ import {
   } from "@badeball/cypress-cucumber-preprocessor";
 
 
-  Given("the user select one answer {string} on question {string}", (selectedAnswer,questionnumber) => {
+  When("the user select one answer {string} on question {string}", (selectedAnswer,questionnumber) => {
 
     cy.get('[data-cy="question'+questionnumber+'"]').select(selectedAnswer);
 
