@@ -1,7 +1,7 @@
 Feature: Complete Final
 
 Scenario: Complete test and final score
-When the student is on the ISTQB exam page
+Given the student is on the ISTQB exam page
 When the user answer questions:
 
 
