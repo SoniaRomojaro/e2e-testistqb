@@ -16,7 +16,6 @@ When the user answer questions:
 |8                  | B. Prueba de Aceptación de Usuario                              | 
 |9                  | B. Son de caja blanca                                           | 
 |10                 | No ha cumplimentado la respuesta                                | 
-
 When the user press Calcular Puntuacion button
 Then the user should see the final score message "Su puntuación es 4"
 
