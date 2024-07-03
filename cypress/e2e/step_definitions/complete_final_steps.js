@@ -11,7 +11,7 @@ import {
 
   }); 
 
-
+}); 
   
   When("the user press Calcular Puntuacion button" , () => {
 
@@ -27,4 +27,4 @@ Then("the user should see the final score message {string}", (expectedMessage) =
 }); 
 
 
-}); 
+
