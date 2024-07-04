@@ -4,7 +4,6 @@ Scenario: Complete test and final score
 Given the student is on the ISTQB exam page
 When the user answer questions:
 
-
 |questionNumber     | selectedAnswer                                                  |                             
 |1                  | B. Pruebas de Regresión                                         |  
 |2                  | B. Todos aquellos que puedan tener algún uso para la herramienta| 
