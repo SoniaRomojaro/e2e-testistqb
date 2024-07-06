@@ -1,22 +1,23 @@
 Feature: Complete Final
 
-  Scenario: Complete test and final score
+  Scenario: Complete test and final score with ranking
     Given the student is on the ISTQB exam page
     When the student enters the name "Clara"
     And press start button
     When the user answer questions:
       | questionNumber | selectedAnswer                                                   |
-      |              1 | B. Pruebas de Regresión                                          |
-      |              2 | B. Todos aquellos que puedan tener algún uso para la herramienta |
-      |              3 | A. Requerimientos                                                |
-      |              4 | A. Analista funcional                                            |
-      |              5 | A. Diseño de Prueba                                              |
-      |              6 | C. Calculos incorrectos                                          |
-      |              7 | C. Validan que el sistema esté completo                          |
-      |              8 | B. Prueba de Aceptación de Usuario                               |
-      |              9 | A. Evaluan las funciones que el sistema debe realizar            |
-      |             10 | A. Se basan en la estructura interna del sistema                 |
+      |1               | B. Pruebas de Regresión                                          |
+      |2               | B. Todos aquellos que puedan tener algún uso para la herramienta |
+      |3               | A. Requerimientos                                                |
+      |4               | A. Analista funcional                                            |
+      |5               | A. Diseño de Prueba                                              |
+      |6               | C. Calculos incorrectos                                          |
+      |7               | C. Validan que el sistema esté completo                          |
+      |8               | B. Prueba de Aceptación de Usuario                               |
+      |9               | A. Evaluan las funciones que el sistema debe realizar            |
+      |10              | A.Se basan en la estructura interna del sistema                |
     When the user press Calcular Puntuacion button
+    When the user click on Ver Ranking button
     
     When the student enters the name "Paco"
     And press start button
@@ -34,7 +35,8 @@ Feature: Complete Final
       |             10 | No ha cumplimentado la respuesta |
    
     When the user press Calcular Puntuacion button
-    
+    When the user click on Ver Ranking button
+
     When the student enters the name "Ana"
     And press start button
     When the user answer questions:
@@ -50,3 +52,5 @@ Feature: Complete Final
       |              9 | B. Son de caja blanca |
       |             10 | B. Son las de caja negra |
     When the user press Calcular Puntuacion button
+    When the user click on Ver Ranking button
+    Then the user should see order message "Nombre: Clara Puntuación: 20 Nombre: Paco Puntuación: 0 Nombre: Ana Puntuación: -10"
