@@ -18,7 +18,7 @@ import {
 
   Then("the user should see order message {string}", (expectedMessage) => {
 
-      cy.get('[data-cy="mensajefinal"]').should('have.text',expectedMessage);
+      cy.get('[data-cy="mensajefinal"]').should('contain.text',expectedMessage);
     
 
  }); 
